@@ -15,7 +15,7 @@ public class App {
 			session.save(emp); // insert
 			transaction.commit();
 			Employee e1;
-			e1 = session.get(Employee.class, 101); // select
+			e1 = session.get(Employee.class, 1); // select
 			System.out.println(e1.toString());
 			session.evict(e1);
 			e1.setName("Monu");
