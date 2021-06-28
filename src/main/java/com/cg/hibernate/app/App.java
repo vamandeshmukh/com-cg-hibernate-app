@@ -19,11 +19,11 @@ public class App {
 			System.out.println(e1.toString());
 			session.evict(e1);
 			e1.setName("Monu");
-			session.update(e1); // update
-			e1 = session.get(Employee.class, 101);
-			System.out.println(e1.toString());
-			session.delete(e1); // delete
-			e1 = session.get(Employee.class, 101);
+//			session.update(e1); // update
+//			e1 = session.get(Employee.class, 101);
+//			System.out.println(e1.toString());
+//			session.delete(e1); // delete
+//			e1 = session.get(Employee.class, 101);
 			System.out.println(e1.toString());
 			session.close();
 			factory.close();
